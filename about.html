@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+      
+       text-align: center   ;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+      }
+       section{
+          max-width: 50rem;
+          
+          margin: 0 auto;
+       }
+       section.head h2 {
+          font-size: 2.5rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+      
+      img {
+        max-width: 25rem;
+        border-radius: 0.625rem;
+        margin: 0 auto 2rem;
+        display: block;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+      }
+      
+        
+         .about p{
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+      
+     .skills h3{
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+      }
+     .skills ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        text-decoration: none;
+        
+      }
+      .skills li{
+        text-decoration: none;
+        list-style: none;
+        border-radius: 1.25rem;
+        padding: 0.625rem 1.25rem;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+
+      }
+        header {
+        padding: 1.5rem 0;
+        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+       
+        
+      }
+      header nav {
+        max-width: 75rem;
+        text-align: center;
+        margin: auto;
+        padding: 0rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;}
+     header nav h1 {
+          font-size: 1.75rem;
+        }
+      header nav ul {
+          list-style: none;
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          flex-wrap: wrap;}
+          header nav ul li a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;}
+            nav a:hover {
+              color: #4a90e2;
+            }
+            header nav ul li a:active {
+              color: #4a90e2;
+              border-bottom: 0.125rem solid #4a90e2;
+              padding-bottom: 0.25rem;
+            }
+          
+        
+        .theme-toggle {
+          background: none;
+          border: 0.125rem solid;
+          padding: 0.5rem 1rem;
+          border-radius: 1.25rem;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #4a90e2;
+            border: #4a90e2;
+            color: white;
+          }
+        }
+      body.dark-mode header nav ul li a{
+        color: white;
+      }
+      body.light-mode header nav ul li a{
+        color: black;
+      }
+
+        body.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+body.light-mode header
+ {
+  background-color: #ffffff;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode header{
+  background-color: #242424;}
+  body.light-mode section li{
+    background-color: #e8f4fd;
+    color: #2c5282;
+  }
+  body.dark-mode section li{
+    background-color: #2d3748;
+    color: #63b3ed;
+  }
+      @media (max-width: 48rem) {
+        h2{
+            font-size: 2rem;
+        }
+      
+   
+        header nav {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        header nav ul {
+          flex-direction: column;
+          gap: 1rem;
+        }}
+
+    </style>
+  </head>
+  <body><header>
+      <nav>
+        <h1>CJ Developer</h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div>
+          
+          <button class="theme-toggle" type="button">☀️ Light</button>
+        </div>
+      </nav>
+    </header>
+    <section class="head">
+      <h2>About Me</h2>
+    </section>
+    <main>
+      <section class="about">
+        <img
+          src="./WhatsApp Image 2025-12-28 at 16.23.33.jpeg"
+          alt="ME"
+          width="100%"
+          height="auto"
+        />
+        <p>
+         Hi! I'm Chizom, a student from Rivers State, Nigeria, living in Scotland. Being
+          in two different locations has helped me become flexible and willing
+          to try new things. As a child, I have been fascinated about how things
+          work, especially things that have something to do with science and
+          technology. This is what has led me to programming and creating my own
+          projects.<p> Currently, programming is my main interest, especially
+          creating my own website. I also love playing games, which has taught
+          me many things, such as patience, quick thinking, and how to
+          persevere. Whether I am programming or learning something new about
+          science, I love challenges that make me think.</p><p> Besides school, my main
+          interest is exploring my knowledge of technology, helping me improve
+          my skills and setting small goals for myself. I am a person who learns
+          by doing, making mistakes, and learning from my errors. This is what
+          has helped me become the person that I am today.</p>
+        </p>
+      </section>
+      <section class="skills">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>JavaScipt</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Git</li>
+                <li>CI/CD</li>
+                
+            </ul>
+      </section>
+    </main>
+      <script>const container = document.body;
+const button = document.querySelector(".theme-toggle");
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme") || "light-mode";
+container.classList.add(savedTheme);
+
+updateButtonText();
+
+function toggleTheme() {
+  if (container.classList.contains("light-mode")) {
+    container.classList.replace("light-mode", "dark-mode");
+    localStorage.setItem("theme", "dark-mode");
+  } else {
+    container.classList.replace("dark-mode", "light-mode");
+    localStorage.setItem("theme", "light-mode");
+  }
+
+  updateButtonText();
+}
+
+function updateButtonText() {
+  if (container.classList.contains("dark-mode")) {
+    button.textContent = "☀️ Light";
+  } else {
+    button.textContent = "🌙 Dark";
+  }
+}
+
+button.addEventListener("click", toggleTheme);</script>
+  </body>
+</html>
